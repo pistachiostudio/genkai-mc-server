@@ -8,7 +8,7 @@ services:
       ENABLE_RCON: "true"
       TYPE: PAPER
       VIEW_DISTANCE: 10
-      MEMORY: 2G
+      MEMORY: 4G
       CONSOLE: "false"
     ports:
       - 25565:25565
