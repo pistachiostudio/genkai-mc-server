@@ -6,7 +6,7 @@ tasks:
   up:
     desc: Up mc server
     cmds:
-      - docker compose up
+      - docker compose up -d
 
   down:
     desc: Down mc server
