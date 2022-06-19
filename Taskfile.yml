@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  up:
+    desc: Up mc server
+    cmds:
+      - docker compose up
+
+  down:
+    desc: Down mc server
+    cmds:
+      - docker compose down
