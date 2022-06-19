@@ -27,13 +27,13 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 
 ## TODO
 
-- [ ] sync world data
+- [x] sync world data
 - [x] set `server-icon.png`
 - [ ] plugins
-	- [ ] GeyserMC
-	- [ ] Floodgate 
-	- [ ] LWC Extended
-	- [ ] Hidden Armor
+	- [x] GeyserMC
+	- [x] Floodgate 
+	- [x] LWC Extended
+	- [x] Hidden Armor
 	- [ ] Dynmap
 - [ ] mc server log forwarder
 	- https://github.com/MICKeyzwo/minecraft-log-forwarder
