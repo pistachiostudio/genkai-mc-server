@@ -14,3 +14,7 @@ docker compose up -d
 ```
 docker compose down
 ```
+
+## Data Directory
+
+https://github.com/itzg/docker-minecraft-server#data-directory
