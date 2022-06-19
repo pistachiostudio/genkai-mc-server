@@ -12,3 +12,8 @@ tasks:
     desc: Down mc server
     cmds:
       - docker compose down
+  
+  logs:
+    desc: Show mc server logs
+    cmds:
+      - docker compose logs -f -t --tail=100
