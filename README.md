@@ -3,14 +3,15 @@
 基本的にversionはlatestをとります
 - https://github.com/itzg/docker-minecraft-server#versions
 
-## コマンド
+## Commands
 
-サーバー起動(バックグラウンド起動)
+Setup & Start
 ```
+./setup.sh
 docker compose up -d
 ```
 
-サーバー停止
+Stop
 ```
 docker compose down
 ```
@@ -18,3 +19,25 @@ docker compose down
 ## Data Directory
 
 https://github.com/itzg/docker-minecraft-server#data-directory
+
+## TODO
+
+- [ ] sync world data
+- [x] set `server-icon.png`
+- [ ] plugins
+	- [ ] GeyserMC
+	- [ ] Floodgate 
+	- [ ] LWC Extended
+	- [ ] Hidden Armor
+	- [ ] Dynmap
+- [ ] mc server log forwarder
+	- https://github.com/MICKeyzwo/minecraft-log-forwarder
+- [ ] set server-name
+	- できなくなったらしい
+		- https://gaming.stackexchange.com/questions/218612/change-minecraft-server-name
+
+## 謝辞
+
+サーバーの設定やスクリプトなど色々参考にさせていただきました。
+
+- [sksat/mc.yohane.su](https://github.com/sksat/mc.yohane.su)
