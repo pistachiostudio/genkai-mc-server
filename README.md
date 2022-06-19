@@ -7,7 +7,7 @@
 
 サーバー起動
 ```
-docker compose up
+docker compose up -d
 ```
 
 サーバー停止
