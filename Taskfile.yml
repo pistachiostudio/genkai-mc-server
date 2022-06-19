@@ -17,6 +17,11 @@ tasks:
     desc: Down mc server
     cmds:
       - docker compose down
+    
+  ps:
+    desc: Show docker compose ps
+    cmds:
+      - docker compose ps
   
   logs:
     desc: Show mc server logs

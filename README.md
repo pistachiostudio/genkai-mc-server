@@ -11,6 +11,11 @@ Setup & Start
 docker compose up -d
 ```
 
+Restart
+```
+docker compose restart
+```
+
 Stop
 ```
 docker compose down
