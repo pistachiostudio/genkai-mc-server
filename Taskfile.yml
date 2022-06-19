@@ -8,6 +8,11 @@ tasks:
     cmds:
       - docker compose up -d
 
+  restart:
+    desc: Restart mc server
+    cmds:
+      - docker compose restart
+
   down:
     desc: Down mc server
     cmds:
