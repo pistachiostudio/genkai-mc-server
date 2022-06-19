@@ -40,6 +40,8 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 - [ ] set server-name
 	- できなくなったらしい
 		- https://gaming.stackexchange.com/questions/218612/change-minecraft-server-name
+- [ ] plugins のインストールスクリプト
+	- 導入したいプラグインをインストールするスクリプトを作成する
 
 ## 謝辞
 
