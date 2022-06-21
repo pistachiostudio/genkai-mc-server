@@ -11,10 +11,57 @@ services:
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 4G
-      CONSOLE: "false"
+      VIRTUAL_HOST: 60.108.164.138
+      VIRTUAL_PORT: 8123
+      LETSENCRYPT_HOST: 60.108.164.138
+      LETSENCRYPT_EMAIL: takumi.basket1682@gmail.com
+    stdin_open: true
     ports:
       - 25565:25565
       - 25575:25575
       - 19132:19132
     volumes:
       - ./data:/data
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - conf:/etc/nginx/conf.d
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - dhparam:/etc/nginx/dhparam
+      - certs:/etc/nginx/certs:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    labels:
+      - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
+    restart: always
+
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: nginx-proxy-le
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - dhparam:/etc/nginx/dhparam:ro
+      - certs:/etc/nginx/certs
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: always
+
+volumes:
+  conf:
+  vhost:
+  html:
+  dhparam:
+  certs:
+
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
