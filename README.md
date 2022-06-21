@@ -36,7 +36,7 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 	- [x] LWC Extended
 	- [x] Hidden Armor
 	- [ ] Dynmap
-- [ ] mc server log forwarder
+- [x] mc server log forwarder
 	- https://github.com/MICKeyzwo/minecraft-log-forwarder
 - [ ] set server-name
 	- できなくなったらしい
