@@ -1,2 +1,5 @@
 data/
 tmp/
+
+logForwarder.ts
+log_forwarder_config.json

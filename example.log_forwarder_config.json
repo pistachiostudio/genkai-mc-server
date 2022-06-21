@@ -1,0 +1,12 @@
+{
+	"logFilePath": "./data/logs",
+	"ModsDirPath": "./data/mods",
+	"webhookUrl": "DISCORD_WEBHOOK_URL",
+	"watchInterval": 1000,
+	"loginMessages": [
+		"がログインしました"
+	],
+	"logoutMessages": [
+		"がログアウトしました"
+	]
+}

@@ -6,7 +6,8 @@
 ## Commands
 
 Setup & Start
-```
+```shell
+export DISCORD_WEBHOOK_URL=YOUR_WEBHOOK_URL
 ./setup.sh
 docker compose up -d
 ```
