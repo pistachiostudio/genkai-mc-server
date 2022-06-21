@@ -3,12 +3,9 @@ Description=Minecraft log forwarder
 After=network.target
 
 [Service]
-TimeoutStartSec=0
 Type=simple
 ExecStart=/home/zztkm/.deno/bin/deno run --allow-read --allow-net /home/zztkm/genkai-mc-server/logForwarder.ts /home/zztkm/genkai-mc-server/log_forwarder_config.json
-Restart=always
-StartLimitInterval=60s
-StartLimitBurst=5
+Restart=on-failure
 
 [Install]
 WantedBy=default.target
