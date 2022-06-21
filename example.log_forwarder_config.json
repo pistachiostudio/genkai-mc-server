@@ -1,5 +1,5 @@
 {
-	"logFilePath": "./data/logs",
+	"logFilePath": "./data/logs/latest.log",
 	"ModsDirPath": "./data/mods",
 	"webhookUrl": "DISCORD_WEBHOOK_URL",
 	"watchInterval": 1000,
