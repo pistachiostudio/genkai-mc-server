@@ -43,6 +43,8 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 		- https://gaming.stackexchange.com/questions/218612/change-minecraft-server-name
 - [ ] plugins のインストールスクリプト
 	- 導入したいプラグインをインストールするスクリプトを作成する
+- [ ] 自動定期バックアップ
+	- 参考: https://github.com/sksat/mc.yohane.su
 
 ## 謝辞
 
