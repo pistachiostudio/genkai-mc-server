@@ -48,7 +48,7 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 - [x] mc server log forwarder
 	- https://github.com/MICKeyzwo/minecraft-log-forwarder
 - [ ] 権限管理 (`/dmarker`など)
-- [ ] BE版のスキン適用
+- [x] BE版のスキン適用
 ### Mid
 - [ ] 自動定期バックアップ
 	- 参考: https://github.com/sksat/mc.yohane.su
