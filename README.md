@@ -30,11 +30,12 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 ## TODO
 
 ### High
-- [ ] dynmap の https 化
+- [x] dynmap の https 化
 - [x] サーバーアイコンの設定
 - [ ] サーバーの定期再起動設定
+- [ ] 自動定期バックアップ
+	- 参考: https://github.com/sksat/mc.yohane.su
 - [x] ~~tkm999からOP権限を剥奪~~
-  - [x] 権限レベルを変更 4 -> 3
 - [ ] 全員寝なくても過半数が寝たら朝になるように設定変更
 - [x] 旧サーバーからのデータ移行
 - [x] set `server-icon.png`
@@ -42,17 +43,15 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 	- [x] GeyserMC
 	- [x] Floodgate 
 	- [x] LWC Extended
-	- [ ] Hidden Armor
-		- [ ] ProtocolLib (こいつがエラーを吐くが原因がわかっていない)
+	- [x] Hidden Armor
+		- [ ] ProtocolLib エラー調査(@zztkm だけかも)
 			- https://www.spigotmc.org/resources/protocollib.1997/
-	- [ ] Dynmap
+	- [x] Dynmap
 - [x] mc server log forwarder
 	- https://github.com/MICKeyzwo/minecraft-log-forwarder
 - [ ] 権限管理 (`/dmarker`など)
 - [x] BE版のスキン適用
 ### Mid
-- [ ] 自動定期バックアップ
-	- 参考: https://github.com/sksat/mc.yohane.su
 - [ ] ログイン前のチャット表示 ChatReplay導入 (参考: https://seesaawiki.jp/perominecraft/d/ChatReplay)
 - [ ] 初期リスでの サーバー説明
 - [ ] 再起動10分前くらいにチャットでアナウンスを表示「10分後サーバーが自動再起動されます」のような文言
