@@ -13,6 +13,7 @@ docker compose up -d
 ```
 
 Restart
+(minecraft のバージョンアップを行うときは Restart すると自動でアップグレードされます)
 ```
 docker compose restart
 ```
