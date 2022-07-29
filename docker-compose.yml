@@ -11,9 +11,9 @@ services:
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 4G
-      VIRTUAL_HOST: 60.108.164.138
+      VIRTUAL_HOST: mc.pistachiostudio.net
       VIRTUAL_PORT: 8123
-      LETSENCRYPT_HOST: 60.108.164.138
+      LETSENCRYPT_HOST: mc.pistachiostudio.net
       LETSENCRYPT_EMAIL: takumi.basket1682@gmail.com
     stdin_open: true
     ports:
