@@ -1,7 +1,18 @@
 # 限界集落 MC Server
 
-基本的にversionはlatestをとります
-- https://github.com/itzg/docker-minecraft-server#versions
+ピスタチオゲーム部の自前マイクラサーバー「限界集落」です。
+
+どなたでもご自由に入って遊んでいただければとおもいます。
+
+JAVA & BE(統合版) どちらも入れます。
+
+## Spec
+
+- JAVA 版 MINECRAFT 1.19.1
+	- JAVA 版ですが BE 版 も入れます
+- メモリ
+	- 4G
+	- `docker-compose.yml` の `services.mc.environment.MEMORY` で定義してます
 
 ## Commands
 
@@ -13,7 +24,7 @@ docker compose up -d
 ```
 
 Restart
-(minecraft のバージョンアップを行うときは Restart すると自動でアップグレードされます)
+- `docker-compose.yml` の `services.mc.environment.VERSION` を更新してリスタートすると指定したバージョンに変更されます
 ```
 docker compose restart
 ```
@@ -66,3 +77,7 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 サーバーの設定やスクリプトなど色々参考にさせていただきました。
 
 - [sksat/mc.yohane.su](https://github.com/sksat/mc.yohane.su)
+
+## 参考
+
+- https://github.com/itzg/docker-minecraft-server#versions
