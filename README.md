@@ -8,7 +8,7 @@ JAVA & BE(統合版) どちらも入れます。
 
 ## Spec
 
-- JAVA 版 MINECRAFT 1.19.1
+- JAVA 版 MINECRAFT 1.19.2
 	- JAVA 版ですが BE 版 も入れます
 - メモリ
 	- 4G
