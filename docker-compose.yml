@@ -7,7 +7,7 @@ services:
 
     environment:
       EULA: "true"
-      VERSION: 1.19.2
+      VERSION: LATEST
       ENABLE_RCON: "true"
       TYPE: PAPER
       VIEW_DISTANCE: 10
