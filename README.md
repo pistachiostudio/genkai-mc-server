@@ -8,30 +8,76 @@ JAVA & BE(統合版) どちらも入れます。
 
 ## Spec
 
-- JAVA 版 MINECRAFT 1.19.2
+- JAVA 版 MINECRAFT LATEST
 	- JAVA 版ですが BE 版 も入れます
 - メモリ
 	- 4G
 	- `docker-compose.yml` の `services.mc.environment.MEMORY` で定義してます
 
+## 導入プラグイン
+
+- GeyserMC
+    - https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/
+- Floodgate
+    - https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/
+- ProtocolLib
+    - https://www.spigotmc.org/resources/protocollib.1997/
+- LWC Extended
+    - https://www.spigotmc.org/resources/lwc-extended.69551/
+- Hidden Armor
+    - Dependencies
+        - ProtocolLib
+    - https://www.spigotmc.org/resources/hidden-armor.100374/
+- Dynmap
+    - https://dev.bukkit.org/projects/dynmap/files
+
+### プラグインの追加 & 導入方法
+
+プラグインディレクトリに移動
+
+```shell
+cd data/plugins
+```
+
+ファイルをダウンロード(いつかこの辺はスクリプト化したい)
+
+```shell
+wget https://dev.bukkit.org/projects/dynmap/files/4167109/download
+```
+
+サーバーを再起動
+```shell
+make up
+```
+
 ## Commands
 
-Setup & Start
+make がない場合は、Makefile の中身を読んで定義されているコマンドを実行してください
+
+Init
 ```shell
+# minecraft-log-forwarder などのセットアップ
 export DISCORD_WEBHOOK_URL=YOUR_WEBHOOK_URL
 ./setup.sh
-docker compose up -d
+
+# サーバーの起動
+make up
 ```
 
-Restart
+バージョンアップ
 - `docker-compose.yml` の `services.mc.environment.VERSION` を更新してリスタートすると指定したバージョンに変更されます
+- デフォルトでは LATEST を指定してあるので最新版になります
 ```
-docker compose restart
+make up
 ```
 
-Stop
+サーバー停止
 ```
-docker compose down
+make stop
+
+or
+
+make down
 ```
 
 ## Data Directory
@@ -52,7 +98,7 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 - [x] set `server-icon.png`
 - [ ] plugins
 	- [x] GeyserMC
-	- [x] Floodgate 
+	- [x] Floodgate
 	- [x] LWC Extended
 	- [x] Hidden Armor
 		- [ ] ProtocolLib エラー調査(@zztkm だけかも)
