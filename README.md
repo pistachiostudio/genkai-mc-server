@@ -33,22 +33,17 @@ JAVA & BE(統合版) どちらも入れます。
 
 ### プラグインの追加 & 導入方法
 
-プラグインディレクトリに移動
+**リモートサーバーの場合**
+1. 必要なバージョンの jar ファイルをダウンロード
+1. scp でファイルをremoteにコピー
+    - `scp {target_file} {server}:{hogehoge}/genkai-mc-server/data/plugins`
+    - target_file: コピーしたいファイル
+    - server: 接続先情報(.ssh/config に定義した名前も使える)
+    - hogehoge: 自分がマイクラサーバーをインストールした場所
+1. リモートサーバー上の不要なプラグインファイルを削除
+1. マイクラサーバーを再起動
+    - `make up`
 
-```shell
-cd data/plugins
-```
-
-ファイルをダウンロード(いつかこの辺はスクリプト化したい)
-
-```shell
-wget https://dev.bukkit.org/projects/dynmap/files/4167109/download
-```
-
-サーバーを再起動
-```shell
-make up
-```
 
 ## Commands
 
