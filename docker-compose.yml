@@ -12,10 +12,10 @@ services:
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 4G
-      VIRTUAL_HOST: mc.pistachiostudio.net
+      VIRTUAL_HOST: genkai.dev
       VIRTUAL_PORT: 8123
-      LETSENCRYPT_HOST: mc.pistachiostudio.net
-      LETSENCRYPT_EMAIL: takumi.basket1682@gmail.com
+      LETSENCRYPT_HOST: genkai.dev
+      LETSENCRYPT_EMAIL: zztkm@tsurutatakumi.info
     stdin_open: true
     ports:
       - 25565:25565
