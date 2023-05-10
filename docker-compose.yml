@@ -8,7 +8,7 @@ services:
     environment:
       EULA: "true"
       VERSION: 1.19.4
-      SEED: 68309945
+      SEED: "-1396032013"
       ENABLE_RCON: "true"
       TYPE: PAPER
       VIEW_DISTANCE: 10
