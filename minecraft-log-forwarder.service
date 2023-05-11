@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/zztkm/genkai-mc-server
+WorkingDirectory=/home/zztkm/srv/genkai-mc-server
 ExecStart=/home/zztkm/.deno/bin/deno run --allow-read --allow-net logForwarder.ts log_forwarder_config.json
 Restart=on-failure
 
