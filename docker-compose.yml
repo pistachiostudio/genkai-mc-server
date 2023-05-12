@@ -1,14 +1,14 @@
-version: '3.8'
+version: '3'
 services:
   mc:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:java17@sha256:6f430148511f4f9e4f7c124dbd0a80ebbf8cfc4ce8880fa6c486d54ca27cd6dd
     restart: always
     container_name: paper
 
     environment:
       EULA: "true"
       VERSION: 1.19.4
-      SEED: "-1396032013"
+      SEED: "3190363681115036031"
       ENABLE_RCON: "true"
       TYPE: PAPER
       VIEW_DISTANCE: 10
@@ -27,7 +27,7 @@ services:
       - ./data:/data
 
   nginx-proxy:
-    image: nginxproxy/nginx-proxy
+    image: nginxproxy/nginx-proxy:1.3
     container_name: nginx-proxy
     restart: always
     ports:
@@ -43,7 +43,7 @@ services:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
 
   letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion
+    image: jrcs/letsencrypt-nginx-proxy-companion:2.2
     container_name: nginx-proxy-lets-encrypt
     restart: always
     depends_on:
