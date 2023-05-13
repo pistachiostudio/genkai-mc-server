@@ -14,6 +14,12 @@ JAVA & BE(統合版) どちらも入れます。
 	- 4G
 	- `docker-compose.yml` の `services.mc.environment.MEMORY` で定義してます
 
+## 設定などの方針
+
+- できるだけ `itzg/minecraft-server` の仕組みに乗っかる
+- 別のイメージへの移行とかはとりあえず考えない
+    - 移行するにしてもある程度の移行作業が発生することは許容する！
+
 ## 導入プラグイン
 
 - GeyserMC
@@ -119,6 +125,9 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 
 - [sksat/mc.yohane.su](https://github.com/sksat/mc.yohane.su)
 
-## 参考
+## Links
 
-- https://github.com/itzg/docker-minecraft-server#versions
+- container image: [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
+    - docs url: https://itzg.github.io/docker-minecraft-docs/
+- deploy automation: [compose-cd](https://github.com/sksat/compose-cd)
+

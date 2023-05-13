@@ -6,10 +6,10 @@ services:
     container_name: paper
 
     environment:
+      # main
       EULA: "true"
       VERSION: 1.19.4
       SEED: "3190363681115036031"
-      ENABLE_RCON: "true"
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 4G
@@ -17,6 +17,13 @@ services:
       VIRTUAL_PORT: 8123
       LETSENCRYPT_HOST: genkai.dev
       LETSENCRYPT_EMAIL: zztkm@tsurutatakumi.info
+      # server config
+      ENABLE_RCON: "true"
+      DIFFICULTY: "easy"
+      MOTD: "Genkai Pistachio Gaming Server"
+      OPS_FILE: /extra/ops.json
+      # plugins
+      SYNC_SKIP_NEWER_IN_DESTINATION: false
     stdin_open: true
     ports:
       - 25565:25565
@@ -25,6 +32,8 @@ services:
       - 8123:8123
     volumes:
       - ./data:/data
+      - ./plugins:/plugins
+      - ./extra:/extra
 
   nginx-proxy:
     image: nginxproxy/nginx-proxy:1.3

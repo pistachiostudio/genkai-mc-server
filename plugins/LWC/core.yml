@@ -1,0 +1,261 @@
+core:
+    locale: en
+    flushInterval: 10
+    cacheSize: 10000
+    precache: -1
+    showNotices: true
+    showMyNotices: false
+    opIsLWCAdmin: true
+    disableHistory: true
+    factionCheck: false
+    groupPrefix: group.
+    updateNotifier: true
+    bindMessageCacheSize: 1000
+optional:
+    onlyProtectWhenOwnerIsOnline: false
+    onlyProtectWhenOwnerIsOffline: false
+    exemptBlocks: []
+    optOut: false
+    blacklistedBlocks:
+    - '166'
+    - hopper
+    blacklistedPlayers:
+    - player
+    useProtectionLimits: true
+    useActionBar: false
+    alternativeHopperProtection: false
+    useFormattedInfo: true
+database:
+    adapter: sqlite
+    path: plugins/LWC/lwc.db
+    host: localhost
+    database: lwc
+    username: ''
+    password: ''
+    prefix: lwc_
+    ping_interval: 300
+protections:
+    denyRedstone: false
+    denyHoppers: true
+    autoRegister: false
+    ignoreBlockDestruction: false
+    ignoreLeftClick: false
+    ignoreRightClick: false
+    ignoreExplosions: false
+    allowEntityBreakDoor: false
+    allowEntityInteract: false
+    quiet: false
+    readonly-modify: false
+    readonly-remove: false
+    blocks:
+        chest:
+            enabled: true
+            autoRegister: public
+        trapped_chest:
+            enabled: true
+            autoRegister: public
+        furnace:
+            enabled: true
+            autoRegister: public
+        blast_furnace:
+            enabled: true
+            autoRegister: public
+        smoker:
+            enabled: true
+            autoRegister: public
+        dispenser:
+            enabled: true
+            autoRegister: public
+        dropper:
+            enabled: true
+            autoRegister: public
+        barrel:
+            enabled: true
+            autoRegister: public
+        composter:
+            enabled: true
+            autoRegister: public
+        lectern:
+            enabled: true
+            autoRegister: public
+        shulker_box:
+            enabled: true
+            autoRegister: public
+        white_shulker_box:
+            enabled: true
+            autoRegister: public
+        orange_shulker_box:
+            enabled: true
+            autoRegister: public
+        magenta_shulker_box:
+            enabled: true
+            autoRegister: public
+        light_blue_shulker_box:
+            enabled: true
+            autoRegister: public
+        yellow_shulker_box:
+            enabled: true
+            autoRegister: public
+        lime_shulker_box:
+            enabled: true
+            autoRegister: public
+        pink_shulker_box:
+            enabled: true
+            autoRegister: public
+        gray_shulker_box:
+            enabled: true
+            autoRegister: public
+        light_gray_shulker_box:
+            enabled: true
+            autoRegister: public
+        cyan_shulker_box:
+            enabled: true
+            autoRegister: public
+        purple_shulker_box:
+            enabled: true
+            autoRegister: public
+        blue_shulker_box:
+            enabled: true
+            autoRegister: public
+        brown_shulker_box:
+            enabled: true
+            autoRegister: public
+        green_shulker_box:
+            enabled: true
+            autoRegister: public
+        red_shulker_box:
+            enabled: true
+            autoRegister: public
+        black_shulker_box:
+            enabled: true
+            autoRegister: public
+        sign:
+            enabled: true
+        iron_door:
+            enabled: true
+        oak_door:
+            enabled: true
+        spruce_door:
+            enabled: true
+        birch_door:
+            enabled: true
+        jungle_door:
+            enabled: true
+        acacia_door:
+            enabled: true
+        dark_oak_door:
+            enabled: true
+        mangrove_door:
+            enabled: true
+        crimson_door:
+            enabled: true
+        warped_door:
+            enabled: true
+        iron_trapdoor:
+            enabled: true
+        oak_trapdoor:
+            enabled: true
+        spruce_trapdoor:
+            enabled: true
+        birch_trapdoor:
+            enabled: true
+        jungle_trapdoor:
+            enabled: true
+        acacia_trapdoor:
+            enabled: true
+        dark_oak_trapdoor:
+            enabled: true
+        mangrove_trapdoor:
+            enabled: true
+        crimson_trapdoor:
+            enabled: true
+        warped_trapdoor:
+            enabled: true
+        oak_fence_gate:
+            enabled: true
+        spruce_fence_gate:
+            enabled: true
+        birch_fence_gate:
+            enabled: true
+        jungle_fence_gate:
+            enabled: true
+        acacia_fence_gate:
+            enabled: true
+        dark_oak_fence_gate:
+            enabled: true
+        mangrove_fence_gate:
+            enabled: true
+        crimson_fence_gate:
+            enabled: true
+        warped_fence_gate:
+            enabled: true
+        white_banner:
+            enabled: true
+        orange_banner:
+            enabled: true
+        magenta_banner:
+            enabled: true
+        light_blue_banner:
+            enabled: true
+        yellow_banner:
+            enabled: true
+        lime_banner:
+            enabled: true
+        pink_banner:
+            enabled: true
+        gray_banner:
+            enabled: true
+        light_gray_banner:
+            enabled: true
+        cyan_banner:
+            enabled: true
+        purple_banner:
+            enabled: true
+        blue_banner:
+            enabled: true
+        brown_banner:
+            enabled: true
+        green_banner:
+            enabled: true
+        red_banner:
+            enabled: true
+        black_banner:
+            enabled: true
+        white_wall_banner:
+            enabled: true
+        orange_wall_banner:
+            enabled: true
+        magenta_wall_banner:
+            enabled: true
+        light_blue_wall_banner:
+            enabled: true
+        yellow_wall_banner:
+            enabled: true
+        lime_wall_banner:
+            enabled: true
+        pink_wall_banner:
+            enabled: true
+        gray_wall_banner:
+            enabled: true
+        light_gray_wall_banner:
+            enabled: true
+        cyan_wall_banner:
+            enabled: true
+        purple_wall_banner:
+            enabled: true
+        blue_wall_banner:
+            enabled: true
+        brown_wall_banner:
+            enabled: true
+        green_wall_banner:
+            enabled: true
+        red_wall_banner:
+            enabled: true
+        black_wall_banner:
+            enabled: true
+modes:
+    droptransfer:
+        enabled: true
+        crossWorld: false
+    persist:
+        enabled: true
