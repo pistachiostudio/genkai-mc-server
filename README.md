@@ -91,11 +91,11 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 - [x] dynmap の https 化
 - [x] サーバーアイコンの設定
 - [ ] サーバーの定期再起動設定
+- [ ] plugin の自動インストール, アップデート
 - [ ] 自動定期バックアップ
 	- 参考: https://github.com/sksat/mc.yohane.su
 - [x] ~~tkm999からOP権限を剥奪~~
 - [ ] 全員寝なくても過半数が寝たら朝になるように設定変更
-- [x] 旧サーバーからのデータ移行
 - [x] set `server-icon.png`
 - [ ] plugins
 	- [x] GeyserMC
