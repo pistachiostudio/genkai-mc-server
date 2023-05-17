@@ -21,6 +21,7 @@ services:
       ENABLE_RCON: "true"
       DIFFICULTY: "easy"
       MOTD: "Genkai Pistachio Gaming Server"
+      SPAWN_PROTECTION: 0
       OPS_FILE: /extra/ops.json
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
