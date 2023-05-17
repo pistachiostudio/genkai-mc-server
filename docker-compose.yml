@@ -1,7 +1,7 @@
 version: '3'
 services:
   mc:
-    image: itzg/minecraft-server:java17@sha256:e346c48c91802cedc7f3b25c169c79e039adf8164d75b42064cf7beecfe99f4c
+    image: itzg/minecraft-server:java17@sha256:c6c6afd0e3fa4f06074a449c2dc8248a55a7c639bdda5754d5eaa6963447c909
     restart: always
     container_name: paper
 
