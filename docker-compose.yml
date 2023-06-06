@@ -24,6 +24,9 @@ services:
       OPS_FILE: /extra/ops.json
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
+      # rcon cmd
+    RCON_CMDS_STARTUP: |-
+      gamerule playersSleepingPercentage 50
     stdin_open: true
     ports:
       - 25565:25565
