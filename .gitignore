@@ -1,5 +1,7 @@
 data/
 tmp/
+backup/*
+!.gitkeep
 
 logForwarder.ts
 log_forwarder_config.json
