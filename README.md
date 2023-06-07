@@ -6,6 +6,11 @@
 
 JAVA & BE(統合版) どちらも入れます。
 
+## Status
+
+- [UpTimeRobot](https://stats.uptimerobot.com/JkAgvFpmxX/794524684)
+- [Dynmap](https://genkai.dev/)
+
 ## Spec
 
 - JAVA 版 MINECRAFT LATEST
