@@ -19,7 +19,7 @@ services:
       LETSENCRYPT_EMAIL: zztkm@tsurutatakumi.info
       # server config
       ENABLE_RCON: "true"
-      DIFFICULTY: "easy"
+      DIFFICULTY: "hard"
       MOTD: "Genkai Pistachio Gaming Server"
       OPS_FILE: /extra/ops.json
       # plugins
