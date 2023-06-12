@@ -17,4 +17,4 @@ ps:
 	docker compose ps
 
 logs:
-	docker compose logs -f -t --tail=200
+	docker compose logs -f -t --tail=200 mc

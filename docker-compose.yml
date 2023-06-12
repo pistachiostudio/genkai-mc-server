@@ -8,7 +8,7 @@ services:
     environment:
       # main
       EULA: "true"
-      VERSION: 1.19.4
+      VERSION: "1.20"
       SEED: "3190363681115036031"
       TYPE: PAPER
       VIEW_DISTANCE: 10
@@ -24,7 +24,10 @@ services:
       OPS_FILE: /extra/ops.json
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
-      SPIGET_RESOURCES: 28140
+      SPIGET_RESOURCES: 1997,28140,69551,100374
+      PLUGINS: |
+        https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
+        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
