@@ -28,6 +28,7 @@ services:
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+        https://dynmap.us/builds/dynmap/Dynmap-3.6-SNAPSHOT-spigot.jar
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
