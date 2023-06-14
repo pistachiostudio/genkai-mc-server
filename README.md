@@ -27,20 +27,18 @@ JAVA & BE(統合版) どちらも入れます。
 
 ## 導入プラグイン
 
-- GeyserMC
-    - https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/
-- Floodgate
-    - https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/
-- ProtocolLib
-    - https://www.spigotmc.org/resources/protocollib.1997/
-- LWC Extended
-    - https://www.spigotmc.org/resources/lwc-extended.69551/
-- Hidden Armor
+**general**
+- [GeyserMC](https://geysermc.org/)
+- [Floodgate](https://wiki.geysermc.org/floodgate/)
+- [Dynmap](https://www.spigotmc.org/resources/dynmap%C2%AE.274/)
+- [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)
+- [LWC Extended](https://www.spigotmc.org/resources/lwc-extended.69551/)
+- [Hidden Armor](https://www.spigotmc.org/resources/hidden-armor.100374/)
     - Dependencies
         - ProtocolLib
-    - https://www.spigotmc.org/resources/hidden-armor.100374/
-- Dynmap
-    - https://dev.bukkit.org/projects/dynmap/files
+
+**supporters**
+- [ParticleHats](https://www.spigotmc.org/resources/particlehats.1007/)
 
 ### プラグインの追加 & 導入方法
 
@@ -72,23 +70,19 @@ make up
 
 バージョンアップ
 - `docker-compose.yml` の `services.mc.environment.VERSION` を更新してリスタートすると指定したバージョンに変更されます
-- デフォルトでは LATEST を指定してあるので最新版になります
+
 ```
 make up
 ```
 
 サーバー停止
 ```
-make stop
-
-or
-
 make down
 ```
 
 ## Data Directory
 
-https://github.com/itzg/docker-minecraft-server#data-directory
+- https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
 
 ## TODO
 
@@ -96,23 +90,23 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 - [x] dynmap の https 化
 - [x] サーバーアイコンの設定
 - [ ] サーバーの定期再起動設定
-- [ ] plugin の自動インストール, アップデート
+- [x] plugin の自動インストール, アップデート
 - [ ] 自動定期バックアップ
 	- 参考: https://github.com/sksat/mc.yohane.su
 - [x] ~~tkm999からOP権限を剥奪~~
-- [ ] 全員寝なくても過半数が寝たら朝になるように設定変更
+- [x] 全員寝なくても過半数が寝たら朝になるように設定変更
 - [x] set `server-icon.png`
 - [ ] plugins
 	- [x] GeyserMC
 	- [x] Floodgate
 	- [x] LWC Extended
 	- [x] Hidden Armor
-		- [ ] ProtocolLib エラー調査(@zztkm だけかも)
+		- [x] ProtocolLib エラー調査(@zztkm だけかも)
 			- https://www.spigotmc.org/resources/protocollib.1997/
 	- [x] Dynmap
 - [x] mc server log forwarder
 	- https://github.com/MICKeyzwo/minecraft-log-forwarder
-- [ ] 権限管理 (`/dmarker`など)
+- [x] 権限管理 (`/dmarker`など)
 - [x] BE版のスキン適用
 ### Mid
 - [ ] ログイン前のチャット表示 ChatReplay導入 (参考: https://seesaawiki.jp/perominecraft/d/ChatReplay)
@@ -121,8 +115,6 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 ### Low
 - [ ] 拠点の保護機能
 - [ ] Discordでの現在オンラインのプレイヤー数表示 (参考: https://github.com/ZixeSea/ServerStats)
-- [ ] plugins のインストールスクリプト
-	- 導入したいプラグインをインストールするスクリプトを作成する
 
 ## 謝辞
 
@@ -132,7 +124,6 @@ https://github.com/itzg/docker-minecraft-server#data-directory
 
 ## Links
 
+- [Intro - Minecraft Server on Docker (Java Edition)](https://docker-minecraft-server.readthedocs.io/en/latest/)
 - container image: [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
-    - docs url: https://itzg.github.io/docker-minecraft-docs/
 - deploy automation: [compose-cd](https://github.com/sksat/compose-cd)
-
