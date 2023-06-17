@@ -60,6 +60,8 @@ services:
       - ./backup:/backups
       # share network namespace with server to simplify rcon access
     network_mode: "service:mc"
+    depends_on:
+      - mc
 
   nginx-proxy:
     image: nginxproxy/nginx-proxy:1.3
