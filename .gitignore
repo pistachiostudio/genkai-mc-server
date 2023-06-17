@@ -5,3 +5,5 @@ backup/*
 
 logForwarder.ts
 log_forwarder_config.json
+
+agent.yml

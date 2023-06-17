@@ -1,0 +1,23 @@
+# refs: https://github.com/Cubxity/UnifiedMetrics/wiki/Grafana-Agent-With-Docker
+prometheus:
+  global:
+    scrape_interval: 60s
+  configs:
+    - name: minecraft
+      host_filter: false
+      scrape_configs:
+        - job_name: minecraft_scrape
+          static_configs:
+            # Put your server's IP here
+            - targets: [ "mc:9100" ]
+              # Feel free to add any labels here
+              labels:
+                node: "genkaimc"
+      remote_write:
+        # 自分の Grafana Cloud の url を入れる
+        # リージョンとかによってURLは変わる
+        - url: https://prometheus-us-central1.grafana.net/api/prom/push
+          # 自分の Grafana Cloud の userid と apikey を入れる
+          basic_auth:
+            username: <instance id / remote_write username>
+            password: <api key / remote_write password>

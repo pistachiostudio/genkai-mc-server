@@ -31,6 +31,7 @@ JAVA & BE(統合版) どちらも入れます。
 - [GeyserMC](https://geysermc.org/)
 - [Floodgate](https://wiki.geysermc.org/floodgate/)
 - [Dynmap](https://www.spigotmc.org/resources/dynmap%C2%AE.274/)
+	- DL はここからが良き: https://dynmap.us/builds/dynmap/
 - [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)
 - [LWC Extended](https://www.spigotmc.org/resources/lwc-extended.69551/)
 - [Hidden Armor](https://www.spigotmc.org/resources/hidden-armor.100374/)

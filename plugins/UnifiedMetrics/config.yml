@@ -1,0 +1,15 @@
+server:
+  name: "global" # This is used for push-based drivers
+
+metrics:
+  enabled: true # The main switch
+  driver: "prometheus" # Valid values: prometheus, influx
+  collectors:
+    systemGc: true
+    systemMemory: true
+    systemProcess: true
+    systemThread: true
+    server: true
+    world: true
+    tick: true
+    events: true
