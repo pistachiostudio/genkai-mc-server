@@ -49,7 +49,7 @@ services:
     image: itzg/mc-backup
     environment:
       BACKUP_INTERVAL: "1d"
-      PRUNE_BACKUPS_DAYS: 5
+      PRUNE_BACKUPS_DAYS: 2
       # instead of network_mode below, could declare RCON_HOST
       # RCON_HOST: mc
     volumes:
