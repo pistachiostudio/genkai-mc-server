@@ -24,15 +24,18 @@ services:
       OPS_FILE: /extra/ops.json
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
-      SPIGET_RESOURCES: 274,1007,1997,28140,69551,100374
+      SPIGET_RESOURCES: 1007,1997,28140,69551,100374
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+        https://github.com/Cubxity/UnifiedMetrics/releases/download/v0.3.8/unifiedmetrics-platform-bukkit-0.3.8.jar
+        https://dynmap.us/builds/dynmap/Dynmap-3.6-beta-1-spigot.jar
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
     stdin_open: true
     ports:
+      - 9100:9100
       - 25565:25565
       - 25575:25575
       - 19132:19132/udp
@@ -85,6 +88,21 @@ services:
       - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  agent:
+    image: grafana/agent:latest
+    restart: always
+    container_name: agent
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ./agent.yml:/etc/agent-config/agent.yml
+    entrypoint:
+      - /bin/grafana-agent
+      - -config.file=/etc/agent-config/agent.yml
+      - -metrics.wal-directory=/tmp/agent/wal
+    depends_on:
+      - mc
 
 volumes:
   conf:

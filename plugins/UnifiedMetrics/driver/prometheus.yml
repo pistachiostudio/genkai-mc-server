@@ -1,0 +1,6 @@
+mode: "HTTP" # "HTTP" or "PUSHGATEWAY"
+
+# Applies to "HTTP" mode.
+http:
+  host: "0.0.0.0"
+  port: 9100 # The default in 0.4.x will be 9970.
