@@ -28,7 +28,7 @@ services:
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
         https://github.com/Cubxity/UnifiedMetrics/releases/download/v0.3.8/unifiedmetrics-platform-bukkit-0.3.8.jar
-        https://dynmap.us/builds/dynmap/Dynmap-3.6-beta-1-spigot.jar
+        https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-2-spigot.jar
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
