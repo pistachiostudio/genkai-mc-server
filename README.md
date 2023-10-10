@@ -2,9 +2,19 @@
 
 ピスタチオゲーム部の自前マイクラサーバー「限界集落」です。
 
-どなたでもご自由に入って遊んでいただければとおもいます。
-
+~~どなたでもご自由に入って遊んでいただければとおもいます。~~
+ムカつくチーターがたまに出没するので、ホワイトリスト方式を採用させていただきました。
 JAVA & BE(統合版) どちらも入れます。
+
+## How to join
+
+参加したい場合は、[ピスタチオゲーム部親睦会](https://discord.gg/pistachiogaming)という Discord の GENERAL > forum > マイクラ Issues にて参加したいユーザーの `UUID` と `Username` を投稿してください。なる早で管理者が追加します。
+
+UUID がわからない方は [Minecraft UUID / Username Converter](https://mcuuid.net/) というサイトで調べてください。
+
+**分かる人むけ**
+
+[whitelist.json](https://github.com/pistachiostudio/genkai-mc-server/blob/main/extra/whitelist.json)を編集して、自分のUUIDとユーザー名を追加する PR を送ってください！
 
 ## Status
 
