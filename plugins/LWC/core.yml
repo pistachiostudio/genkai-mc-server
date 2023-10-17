@@ -50,85 +50,58 @@ protections:
     blocks:
         chest:
             enabled: true
-            autoRegister: public
         trapped_chest:
             enabled: true
-            autoRegister: public
         furnace:
             enabled: true
-            autoRegister: public
         blast_furnace:
             enabled: true
-            autoRegister: public
         smoker:
             enabled: true
-            autoRegister: public
         dispenser:
             enabled: true
-            autoRegister: public
         dropper:
             enabled: true
-            autoRegister: public
         barrel:
             enabled: true
-            autoRegister: public
         composter:
             enabled: true
-            autoRegister: public
         lectern:
             enabled: true
-            autoRegister: public
         shulker_box:
             enabled: true
-            autoRegister: public
         white_shulker_box:
             enabled: true
-            autoRegister: public
         orange_shulker_box:
             enabled: true
-            autoRegister: public
         magenta_shulker_box:
             enabled: true
-            autoRegister: public
         light_blue_shulker_box:
             enabled: true
-            autoRegister: public
         yellow_shulker_box:
             enabled: true
-            autoRegister: public
         lime_shulker_box:
             enabled: true
-            autoRegister: public
         pink_shulker_box:
             enabled: true
-            autoRegister: public
         gray_shulker_box:
             enabled: true
-            autoRegister: public
         light_gray_shulker_box:
             enabled: true
-            autoRegister: public
         cyan_shulker_box:
             enabled: true
-            autoRegister: public
         purple_shulker_box:
             enabled: true
-            autoRegister: public
         blue_shulker_box:
             enabled: true
-            autoRegister: public
         brown_shulker_box:
             enabled: true
-            autoRegister: public
         green_shulker_box:
             enabled: true
-            autoRegister: public
         red_shulker_box:
             enabled: true
-            autoRegister: public
         black_shulker_box:
             enabled: true
-            autoRegister: public
         sign:
             enabled: true
         iron_door:
