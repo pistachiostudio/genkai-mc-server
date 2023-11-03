@@ -1,9 +1,11 @@
 [Unit]
-Description=Timer for Minecraft server restart
+Description=timer for minecraft server restart
+After=network.target
 
-[Timer]
-OnCalendar=*-*-* 20:00:00
-Persistent=true
+[Service]
+Type=simple
+WorkingDirectory=/home/zztkm/srv/genkai-mc-server
+ExecStart=docker compose restart
 
 [Install]
-WantedBy=timers.target
+WantedBy=default.target
