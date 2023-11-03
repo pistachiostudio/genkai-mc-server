@@ -1,0 +1,13 @@
+[Unit]
+Description=timer for minecraft server restart
+
+[Service]
+Type=simple
+WorkingDirectory=/home/zztkm/srv/genkai-mc-server
+ExecStart=docker compose restart
+
+[Timer]
+OnUnit
+
+[Install]
+WantedBy=default.target
