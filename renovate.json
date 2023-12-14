@@ -7,7 +7,7 @@
     {
       "datasources": ["docker"],
       "matchUpdateTypes": ["major"],
-      "enabled": true
+      "enabled": false
     }
   ]
 }
