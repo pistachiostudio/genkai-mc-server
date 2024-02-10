@@ -65,7 +65,7 @@ services:
       - mc
 
   nginx-proxy:
-    image: nginxproxy/nginx-proxy:1.3
+    image: nginxproxy/nginx-proxy:1.5
     container_name: nginx-proxy
     restart: always
     ports:
