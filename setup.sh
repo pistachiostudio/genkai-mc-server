@@ -15,6 +15,6 @@ sudo ln -s `pwd`/minecraft-restart.service "/etc/systemd/system/"
 sudo ln -s `pwd`/minecraft-restart.timer "/etc/systemd/system/"
 
 sudo systemctl daemon-reload
-sudo systemctl enable --now minecraft-log-forwarder.service
+# sudo systemctl enable --now minecraft-log-forwarder.service
 sudo systemctl enable --now minecraft-restart.timer
 
