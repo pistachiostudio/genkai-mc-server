@@ -8,7 +8,7 @@ services:
     environment:
       # main
       EULA: "true"
-      VERSION: "1.20.2"
+      VERSION: "1.20.6"
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 4G
@@ -29,8 +29,7 @@ services:
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
-        https://github.com/Cubxity/UnifiedMetrics/releases/download/v0.3.8/unifiedmetrics-platform-bukkit-0.3.8.jar
-        https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-2-spigot.jar
+        https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-5-spigot.jar
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
@@ -91,21 +90,20 @@ services:
       - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
-
-  agent:
-    image: grafana/agent:latest
-    restart: always
-    container_name: agent
-    security_opt:
-      - no-new-privileges:true
-    volumes:
-      - ./agent.yml:/etc/agent-config/agent.yml
-    entrypoint:
-      - /bin/grafana-agent
-      - -config.file=/etc/agent-config/agent.yml
-      - -metrics.wal-directory=/tmp/agent/wal
-    depends_on:
-      - mc
+        #  agent:
+        #    image: grafana/agent:latest
+        #    restart: always
+        #    container_name: agent
+        #    security_opt:
+        #      - no-new-privileges:true
+        #    volumes:
+        #      - ./agent.yml:/etc/agent-config/agent.yml
+        #    entrypoint:
+        #      - /bin/grafana-agent
+        #      - -config.file=/etc/agent-config/agent.yml
+        #      - -metrics.wal-directory=/tmp/agent/wal
+        #    depends_on:
+        #      - mc
 
 volumes:
   conf:
