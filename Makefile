@@ -15,8 +15,8 @@ restart:
 
 .PHONY: reset
 reset:
-	docker compose down -v
 	bash backup.sh
+	docker compose down -v
 	docker compose up -d --build --force-recreate
 
 ps:
