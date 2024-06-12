@@ -13,6 +13,12 @@ start:
 restart:
 	docker compose restart
 
+.PHONY: reset
+reset:
+	docker compose down -v
+	bash backup.sh
+	docker compose up -d --build --force-recreate
+
 ps:
 	docker compose ps
 

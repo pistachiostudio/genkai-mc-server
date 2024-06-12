@@ -11,7 +11,7 @@ services:
       VERSION: "1.20.6"
       TYPE: PAPER
       VIEW_DISTANCE: 10
-      MEMORY: 4G
+      MEMORY: 12G
       VIRTUAL_HOST: genkai.dev
       VIRTUAL_PORT: 8123
       LETSENCRYPT_HOST: genkai.dev
