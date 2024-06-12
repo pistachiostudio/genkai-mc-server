@@ -30,6 +30,8 @@ services:
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
         https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-5-spigot.jar
+        https://dev.bukkit.org/projects/worldedit/files/5400331/download
+        https://dev.bukkit.org/projects/worldguard/files/5344377/download
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
