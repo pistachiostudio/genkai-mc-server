@@ -8,8 +8,9 @@ services:
     environment:
       # main
       EULA: "true"
-      VERSION: "1.20.6"
+      VERSION: "1.21"
       TYPE: PAPER
+      PAPER_CHANNEL: experimental
       VIEW_DISTANCE: 10
       MEMORY: 12G
       VIRTUAL_HOST: genkai.dev
@@ -25,13 +26,18 @@ services:
       EXISTING_WHITELIST_FILE: SYNCHRONIZE
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
-      SPIGET_RESOURCES: 1007,1997,28140,69551,100374
+
+      # SPIGET_RESOURCES 1.21 対応できていないプラグイン
+      # 100374 (Hidden Armor)
+      SPIGET_RESOURCES: 1007,1997,28140,69551
+
+      # 1.21 で起動できないのでコメントアウトしている PLUGINS 指定 URL
+      # https://dev.bukkit.org/projects/worldedit/files/5400331/download
+      # https://dev.bukkit.org/projects/worldguard/files/5344377/download
+      # https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-5-spigot.jar
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
-        https://dynmap.us/builds/dynmap/Dynmap-3.7-beta-5-spigot.jar
-        https://dev.bukkit.org/projects/worldedit/files/5400331/download
-        https://dev.bukkit.org/projects/worldguard/files/5344377/download
       # rcon cmd
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage 50
