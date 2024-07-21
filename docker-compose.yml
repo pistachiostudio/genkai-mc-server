@@ -9,7 +9,6 @@ services:
       EULA: "true"
       VERSION: "1.21"
       TYPE: PAPER
-      PAPER_CHANNEL: experimental
       VIEW_DISTANCE: 10
       MEMORY: 12G
       VIRTUAL_HOST: genkai.dev
