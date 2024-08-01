@@ -20,8 +20,9 @@ services:
       DIFFICULTY: "hard"
       MOTD: "Genkai Pistachio Gaming Server"
       OPS_FILE: /extra/ops.json
-      WHITELIST_FILE: /extra/whitelist.json
-      EXISTING_WHITELIST_FILE: SYNCHRONIZE
+      # WHITELIST_FILE: /extra/whitelist.json
+      # EXISTING_WHITELIST_FILE: SYNCHRONIZE
+
       # plugins
       SYNC_SKIP_NEWER_IN_DESTINATION: false
 
