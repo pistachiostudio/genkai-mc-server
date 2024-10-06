@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:java21-graalvm@sha256:edd1968cb701da6a7a358170ad6503323e35fb6ec6984eb31ec1a8a4687b75ec
+    image: itzg/minecraft-server:java21-graalvm@sha256:7acc76d0bd4bcc00c64750a60fb6a5915600a8920c8824474d18e46ed7f654cb
     restart: always
     container_name: paper
 
