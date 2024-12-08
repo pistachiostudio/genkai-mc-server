@@ -7,7 +7,7 @@ services:
     environment:
       # main
       EULA: "true"
-      VERSION: "1.21"
+      VERSION: "1.21.4"
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 12G
