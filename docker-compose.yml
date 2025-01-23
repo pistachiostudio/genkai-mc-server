@@ -49,7 +49,7 @@ services:
       - 25565:25565
       # - 25575:25575
       - 19132:19132/udp
-      # - 8123:8123
+      - 8123:8123
     volumes:
       - ./data:/data
       - ./plugins:/plugins
@@ -73,47 +73,47 @@ services:
     depends_on:
       - mc
 
-      #nginx-proxy:
-      #  image: nginxproxy/nginx-proxy:1.6
-      #  container_name: nginx-proxy
-      #  restart: always
-      #  ports:
-      #    - "80:80"
-      #    - "443:443"
-      #  volumes:
-      #    - vhost:/etc/nginx/vhost.d
-      #    - html:/usr/share/nginx/html
-      #    - dhparam:/etc/nginx/dhparam
-      #    - certs:/etc/nginx/certs:ro
-      #    - /var/run/docker.sock:/tmp/docker.sock:ro
-      #  labels:
-      #    - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy:1.6
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - dhparam:/etc/nginx/dhparam
+      - certs:/etc/nginx/certs:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    labels:
+      - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
 
-      #letsencrypt:
-      #  image: jrcs/letsencrypt-nginx-proxy-companion:2.5
-      #  container_name: nginx-proxy-lets-encrypt
-      #  restart: always
-      #  depends_on:
-      #    - nginx-proxy
-      #  volumes:
-      #    - vhost:/etc/nginx/vhost.d
-      #    - html:/usr/share/nginx/html
-      #    - certs:/etc/nginx/certs:rw
-      #    - /var/run/docker.sock:/var/run/docker.sock:ro
-      #      #  agent:
-      #      #    image: grafana/agent:latest
-      #      #    restart: always
-      #      #    container_name: agent
-      #      #    security_opt:
-      #      #      - no-new-privileges:true
-      #      #    volumes:
-      #      #      - ./agent.yml:/etc/agent-config/agent.yml
-      #      #    entrypoint:
-      #      #      - /bin/grafana-agent
-      #      #      - -config.file=/etc/agent-config/agent.yml
-      #      #      - -metrics.wal-directory=/tmp/agent/wal
-      #      #    depends_on:
-      #      #      - mc
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion:2.5
+    container_name: nginx-proxy-lets-encrypt
+    restart: always
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - certs:/etc/nginx/certs:rw
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+        #  agent:
+        #    image: grafana/agent:latest
+        #    restart: always
+        #    container_name: agent
+        #    security_opt:
+        #      - no-new-privileges:true
+        #    volumes:
+        #      - ./agent.yml:/etc/agent-config/agent.yml
+        #    entrypoint:
+        #      - /bin/grafana-agent
+        #      - -config.file=/etc/agent-config/agent.yml
+        #      - -metrics.wal-directory=/tmp/agent/wal
+        #    depends_on:
+        #      - mc
 
 volumes:
   conf:
