@@ -14,7 +14,7 @@ UUID がわからない方は [Minecraft UUID / Username Converter](https://mcuu
 
 **分かる人むけ**
 
-[whitelist.json](https://github.com/pistachiostudio/genkai-mc-server/blob/main/extra/whitelist.json)を編集して、自分のUUIDとユーザー名を追加する PR を送ってください！
+[whitelist.json](https://github.com/pistachiostudio/genkai-mc-server/blob/main/extra/whitelist.json)を編集して、自分のUUIDとユーザー名を追加する Pull Request を送ってください！
 
 ## Status
 
