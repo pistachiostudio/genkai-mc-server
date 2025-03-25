@@ -33,8 +33,8 @@ services:
 
       # Modrinth
       # plugin はこちらで検索: https://modrinth.com/plugins
-      # NOTE: https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/modrinth/ 
-      MODRINTH_PROJECTS: dynmap:3.7-beta-8,worldedit:HIoAq6RI,worldguard:7.0.13-beta-2
+      # NOTE: https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/modrinth/
+      MODRINTH_PROJECTS: dynmap:3.7-beta-8
 
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
