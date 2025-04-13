@@ -8,8 +8,8 @@ services:
     environment:
       # main
       EULA: "true"
-      # PAPER_CHANNEL: "experimental" # PaperMC 上で experimental build 扱いのバージョンで遊ぶときは必要な設定
-      VERSION: "1.21.4"
+      PAPER_CHANNEL: "experimental" # PaperMC 上で experimental build 扱いのバージョンで遊ぶときは必要な設定
+      VERSION: "1.21.5"
       TYPE: PAPER
       VIEW_DISTANCE: 10
       MEMORY: 12G
