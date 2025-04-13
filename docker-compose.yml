@@ -1,6 +1,7 @@
 services:
   mc:
-    image: itzg/minecraft-server:java21-graalvm@sha256:a3e9bf31bc011eac96fea66ad910c97dbfa49982bb14235a96d108941c69a63b
+    # TODO(zztkm): java23-graalvm の利用を検討する(違いをよくわかってないのでそこから調査)
+    image: itzg/minecraft-server:java21-graalvm@sha256:263490fc1075f8cbb4d7b01adc281e1e21066bd053b03710de2177b73de7d4e9
     restart: always
     container_name: paper
 
