@@ -136,5 +136,5 @@ make down
 ## Links
 
 - [Intro - Minecraft Server on Docker (Java Edition)](https://docker-minecraft-server.readthedocs.io/en/latest/)
-- container image: [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
+- container image: [itzg/docker-minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/)
 - deploy automation: [compose-cd](https://github.com/sksat/compose-cd)
